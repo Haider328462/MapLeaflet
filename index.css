@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+ body {
+   background-color:whitesmoke ;
+ }
+
+ .popup-content {
+  font-family: Arial, sans-serif;
+  
+}
+
+.state-name {
+  color: black; /* Adjust for a mix of colors */
+  font-size: 1.25rem; /* Smaller size */
+  font-weight: lighter;
+  
+}
+
+.transparent-popup {
+  border-radius: 40px; /* Optional: Add rounded corners */
+  padding: 15px; /* Optional: Add padding */
+}
+
+
+
+
+.leaflet-popup {
+  border-radius: 20px !important;
+  background-color: rgba(243, 241, 241, 0.5) !important; /* White with 90% opacity */
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 20px !important;
+  background-color: rgba(243, 241, 241, 0.5) !important; /* Ensure the wrapper is also white with opacity */
+  border-radius: 20px; /* Optional for rounded corners */
+}
+
+.leaflet-popup-tip {
+  border-radius: 10px;
+  background-color: rgba(243, 241, 241, 0.5) !important; /* Change the arrow color */
+}
+
+
+.amount {
+  font-size: 2rem; /* Larger text */
+  font-weight: bold;
+  
+}
+
+.logo {
+  color: gray;
+  font-size: 0.75rem; /* Small text */
+  margin-top: -90px; /* Negative margin to remove space */
+  padding-top: -90%;
+}
+
+.color-bars {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.color-bars div {
+  flex: 1; /* Makes sure each column takes equal space */
+  text-align: center; /* Center the number text */
+}
+
+.color-bars div div {
+  height: 0px; /* Bar height */
+  border-radius: 1px; /* Rounded edges */
+  margin-bottom: 1px; /* Space between bar and number */
+}
